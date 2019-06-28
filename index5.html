@@ -5,17 +5,17 @@
      <title>Photo-Gallery-td5</title>
      <meta name="viewport" content="width=device-width", initial-scale=1.0">
      <link href="css/normalize.css" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="js/lightbox/lightbox.css">
      <link rel="stylesheet" href="css/styles.css">
  </head>
  <body>
    <div class="wrapper">
 
-     <div>
       <div class="search-box">
-        <input type="text" placeholder="search...">
+        <input class="search-box__input" type="text" placeholder="Search">
       </div>
+
 
       <div class="gallery">
         <a href="photos/01.jpg" data-lightbox="image-set" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
@@ -24,7 +24,7 @@
         <a href="photos/02.jpg" data-lightbox="image-set" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
           <img src="photos/thumbnails/02.jpg" alt="Lake">
         </a>
-        <a href="photos/03.jpg" data-lightbox="image-set" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+        <a class="image" href="photos/03.jpg" data-lightbox="image-set" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
           <img src="photos/thumbnails/03.jpg" alt="Canyon">
         </a>
         <a href="photos/04.jpg" data-lightbox="image-set" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
@@ -52,10 +52,10 @@
           <img src="photos/thumbnails/11.jpg" alt="Cave">
         </a>
         <a href="photos/12.jpg" data-lightbox="image-set" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
-          <img src="photos/thumbnails/12.jpg" alt="Bluebells"></a>
+          <img src="photos/thumbnails/12.jpg" alt="Bluebells">
+        </a>
      </div>
    </div>
-
    <script src="js/lightbox/lightbox-plus-jquery.min.js"></script>
    <script src="js/scripts.js"></script>
  </body>
