@@ -19,14 +19,15 @@ li {
 
 
 .search-box{
-  background-color: : pink;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
 }
 
-.search-box__input{
+
+/*search box input*/
+#search{
   background-color: white;
   width: 240px;
   font-size: 14px;
@@ -40,14 +41,14 @@ li {
   transition-property: width, box-shadow;
 }
 
-.search-box__input:hover,
-.search-box_input:focus{
+#search:hover,
+#search:focus{
     width: 270px;
     box-shadow: 1px 2px 8px -5px rgba(0,0,0,.6);
 }
 
 
-ul{
+.gallery{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -55,7 +56,7 @@ ul{
 }
 
 
-li,
+
 a {
   width:47%;
   padding-bottom: 6vh;
@@ -69,22 +70,30 @@ img {
 
 
 @media (min-width: 768px){
-  .search-box__input{
+  #search {
     width: 335px;
     margin-bottom: 7vh;
     }
-  li{
+    #search:hover,
+    #search:focus{
+        width: 335px;
+      }
+  a {
     width: 30%;
     padding-bottom: 8vh;
   }
 }
 
 @media (min-width: 1024px){
-  .search-box__input{
+  #search {
     width: 435px;
     margin-bottom: 7vh;
   }
-  li{
+  #search:hover,
+  #search:focus{
+      width: 435px;
+    }
+  a {
     width: 22%;
     padding-bottom: 8vh;
   }
